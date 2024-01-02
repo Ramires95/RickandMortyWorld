@@ -22,7 +22,6 @@ Welcome to the Rick and Morty World! This application allows you to fetch inform
    - Use the search bar to find characters by name.
    - Click on the desired character
    - Explore the detailed information provided for each character.
-   - 
 
 ## Roadmap
 
