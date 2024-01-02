@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick and Morty World
 
-## Getting Started
+Welcome to the Rick and Morty World! This application allows you to fetch information about your favorite characters from the animated series Rick and Morty. Explore the vast universe of characters.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Character Information
+   - Fetch detailed information about Rick and Morty characters.
+   - View data such as name, status, species, origin, and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Search Functionality
+   - Easily search for characters using their names.
+   - Find specific characters or discover new ones.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Interactive UI
+   - Enjoy a user-friendly interface for a seamless browsing experience.
+   - Engage with the dynamic presentation of character details.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+1. **Character Search**
+   - Use the search bar to find characters by name.
+   - Click on the desired character
+   - Explore the detailed information provided for each character.
+   - 
 
-To learn more about Next.js, take a look at the following resources:
+## Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Add basic functionality for searching characters by name
+- [ ] Add ability to search characters by id, episode or randomly
+- [ ] Improve UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Built With
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+
+Get ready for an interdimensional adventure! 🚀
+
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
