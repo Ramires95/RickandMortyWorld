@@ -1,21 +1,31 @@
 "use client";
 import React, { useState } from "react";
-import { fetchCharacter} from "../api/request";
-import {SearchBar} from "./SearchBar";
-import {CharacterCard} from "./Card";
+import { fetchCharacter } from "../api/request";
+import { SearchBar } from "./SearchBar";
+import { CharacterCard } from "./Card";
 
 export default function App() {
   const [filterText, setFilterText] = useState("");
   const [characters, setCharacters] = useState([]);
 
-  const handleTextChange = (text) => setFilterText(text);
+  const handleTextChange = (text) => {
+
+    if(text === filterText) {
+      return
+    }
+    setFilterText(text)
+
+  }
 
   const fetchAllCharacters = async (name, page = 1) => {
     try {
       const characterData = await fetchCharacter(name, page);
 
       if (characterData.length > 0) {
-        setCharacters((prevCharacters) => [...prevCharacters, ...characterData]);
+        setCharacters((prevCharacters) => [
+          ...prevCharacters,
+          ...characterData,
+        ]);
         await fetchAllCharacters(name, page + 1);
       }
     } catch (error) {
@@ -39,7 +49,7 @@ export default function App() {
         onTextChange={handleTextChange}
         onFetchCharacter={handleFetchCharacter}
       />
-      {characters && <CharacterCard characters={characters} />}
+      <CharacterCard characters={characters} />
     </div>
   );
 }
