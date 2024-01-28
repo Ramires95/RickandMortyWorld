@@ -1,6 +1,7 @@
 # Rick and Morty World
 
 Welcome to the Rick and Morty World! This application allows you to fetch information about your favorite characters from the animated series Rick and Morty. Explore the vast universe of characters.
+Developed in 2022 during a 14 week full stack bootcamp
 
 ## Features
 
