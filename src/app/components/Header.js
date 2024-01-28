@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <>
-      <div className=" flex relative mx-5" style={{ width: "95vw", height: "20vh"}}>
+      <div className=" flex relative mx-5 h-48">
         <Image
           src="/banner.jpg"
           alt="banner"

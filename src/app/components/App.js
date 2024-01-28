@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { fetchCharacter } from "../api/request";
+import { fetchCharacter, fetchRandomCharacter } from "../api/request";
 import { SearchBar } from "./SearchBar";
 import { CharacterCard } from "./Card";
 
@@ -15,6 +15,15 @@ export default function App() {
     }
     setFilterText(text)
 
+  }
+
+  const fetchRandCharacter = async() => {
+    try {
+      const characterData = await fetchRandomCharacter();
+      setCharacters([characterData])
+    } catch (error) {
+      console.log("Error fetching character data", error);
+    }
   }
 
   const fetchAllCharacters = async (name, page = 1) => {
@@ -48,6 +57,7 @@ export default function App() {
         filterText={filterText}
         onTextChange={handleTextChange}
         onFetchCharacter={handleFetchCharacter}
+        fetchRandCharacter={fetchRandCharacter}
       />
       <CharacterCard characters={characters} />
     </div>

@@ -7,8 +7,6 @@ export default function DefaultCards() {
     const fetchRandomChar = async() => {
 
       const characterData = await fetchRandomCharacter();
-      console.log(characterData);
-
       setCharacters(characterData)
     }
 
